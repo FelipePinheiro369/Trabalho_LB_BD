@@ -1,0 +1,11 @@
+import csv
+with open('C:/Users/fpinheiro/Documents/VsCode/Candidatos_MS/Dados/consulta_vagas_2020/consulta_vagas_2020_MS.csv',mode='r',encoding='latin1') as arquivo_csv:
+ arquivo = csv.reader(arquivo_csv,delimiter=",")
+ count =0
+ matriz =[]
+ for i,linha  in  enumerate(arquivo_csv):
+    if i == 0:
+        print('Atributos: ',linha)
+    else: 
+        print('Valor: ',linha)
+print(count)
